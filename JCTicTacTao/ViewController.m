@@ -23,22 +23,18 @@
 }
 -(void)gameAction {
     
-
-    state = [[NSMutableArray alloc]initWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
-    
-    
-    
-    winingCombinaion = @[@[@0,@1,@2],@[@3,@4,@5],@[@6,@7,@8],
-                        @[@0,@3,@6],@[@1,@4,@7],@[@2,@5,@8],
-                        @[@0,@4,@8],@[@2,@4,@6]];
-    
     numberOfTurns = 0;
     currentPlayer = 1;
     isFinishGame = false;
     
     
+    winingCombinaion = @[@[@0,@1,@2],@[@3,@4,@5],@[@6,@7,@8],
+                        @[@0,@3,@6],@[@1,@4,@7],@[@2,@5,@8],
+                        @[@0,@4,@8],@[@2,@4,@6]];
+    state = [[NSMutableArray alloc]initWithObjects:@0,@0,@0,@0,@0,@0,@0,@0,@0, nil];
+
     
-    for(int i=100; i<108;i++) {
+    for(int i=100; i<=108;i++) {
         
         UIButton *button = [self.view viewWithTag:i];
         
@@ -115,10 +111,9 @@
                 
                 isFinishGame = YES;
                 NSString *winnerPlayer = [NSString stringWithFormat:@"Congrats! %d Won The Game",player];
-                _labelDisplay.text = @"Congrats! You Won The Game";
 
                 
-                [self alertWithAction:winnerPlayer Massage:@"Do You Play Again"];
+                [self alertWithEndAction:winnerPlayer Massage:@"Do You Play Again"];
                 
                 break;
                 
@@ -131,7 +126,7 @@
         BOOL zeroValuePresent = [state containsObject:@0];
         
         if (!zeroValuePresent) {
-            [self alertWithAction:@"Draw Game" Massage:@"Do You Play Again"];
+            [self alertWithEndAction:@"Draw Game" Massage:@"Do You Play Again"];
             
         }
     }
@@ -167,7 +162,7 @@
     
 
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        exit(0);
     }];
     [alert addAction:cancel];
     

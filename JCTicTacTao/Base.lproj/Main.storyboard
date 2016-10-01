@@ -119,12 +119,12 @@
                                     <constraint firstItem="lEB-Ge-BL3" firstAttribute="height" secondItem="uGV-m3-ATM" secondAttribute="height" id="rL1-gG-fje"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-kg-uSt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-kg-uSt">
                                 <rect key="frame" x="208" y="528" width="154" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Uag-cV-AtT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -136,7 +136,7 @@
                             <constraint firstItem="DIJ-jQ-X1s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Mrk-XG-fGX"/>
                             <constraint firstItem="YIU-JH-aOW" firstAttribute="centerX" secondItem="DIJ-jQ-X1s" secondAttribute="centerX" id="PRn-BS-W0n"/>
                             <constraint firstItem="YIU-JH-aOW" firstAttribute="centerY" secondItem="DIJ-jQ-X1s" secondAttribute="centerY" id="VCf-tc-QVn"/>
-                            <constraint firstItem="NaG-kg-uSt" firstAttribute="top" secondItem="7dt-uS-dnf" secondAttribute="bottom" constant="45" id="XTT-cG-N95"/>
+                            <constraint firstItem="NaG-kg-uSt" firstAttribute="top" secondItem="7dt-uS-dnf" secondAttribute="bottom" constant="30" id="XTT-cG-N95"/>
                             <constraint firstItem="NaG-kg-uSt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="Zxo-ej-Zz5"/>
                             <constraint firstItem="DIJ-jQ-X1s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdH-qv-cEw"/>
                             <constraint firstItem="YIU-JH-aOW" firstAttribute="height" secondItem="DIJ-jQ-X1s" secondAttribute="height" id="tfw-UI-0da"/>
